@@ -12,7 +12,7 @@ class Board extends React.Component {
       squares: Array(9).fill(null), //儲存Board的狀態
       goNext: true, //利用boolean值改變來決定下一位出手者是誰 *
     }
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(i){
