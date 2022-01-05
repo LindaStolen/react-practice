@@ -2,16 +2,60 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Favorite from './Favorite';
+import Dismantle from './Component';
+import NameForm from './NameForm';
+// import Clock from "./Clock";
+// import Toggle from "./Toggle";
+// import Event from "./Event";
+// import Login from "./Login";
+// import InlineJsx from "./InlineJsx";
+
+// import reportWebVitals from './reportWebVitals';
+
+
+// function Clock(props){
+//   return(
+//       <div>
+//           <h1>Hello, world!</h1>
+//           <h2>It is {props.time.toLocaleTimeString(props)}.</h2>
+//       </div>
+//   )
+// }
+
+let sum = (
+  <div className="container">
+    <Favorite/>
+    <App/>
+    <NameForm />
+    {/* <Login />
+    <Event/> */}
+    <Dismantle/>
+    {/* <Clock />
+    <Toggle />
+    <InlineJsx /> */}
+  </div>
+)
+// function tick(){
+  // ReactDOM.render(
+  //   <div className="container">
+  //     <Favorite/>
+  //     <App/>
+  //     <Dismantle/>
+  //     <Clock />
+  //   </div>
+  //   // sum
+  //   ,
+  //   document.getElementById('root')
+  // );
+// }
+
+// setInterval(tick, 1000);
+
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  sum,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
