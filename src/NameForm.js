@@ -10,8 +10,7 @@ export class NameForm extends Component {
             // nameArray: [],
         }
         this.handleClick = this.onChange.bind(this)
-        this.submitClick = this.submitClick.bind(this)
-        
+        this.submitClick = this.submitClick.bind(this)        
     }
     onChange(e){
         this.setState({

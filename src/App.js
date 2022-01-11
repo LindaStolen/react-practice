@@ -32,7 +32,7 @@ function whatever() {
   return (
     <div className="process">
       {make}
-      {/* <Money/> 這是react element，這時候不會直接執行function/class內容，要等到觸發render()才會。 */}
+      <Money/>{/* 這是react element，這時候不會直接執行function/class內容，要等到觸發render()才會。*/}
       {want(food)}
     </div>
   );

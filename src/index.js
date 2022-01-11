@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import Favorite from './Favorite';
 import Dismantle from './Component';
 import NameForm from './NameForm';
+import Ancestor from './Ancestor';
+import Composition from './Composition';
 // import Clock from "./Clock";
 // import Toggle from "./Toggle";
 // import Event from "./Event";
@@ -26,7 +28,9 @@ import NameForm from './NameForm';
 let sum = (
   <div className="container">
     <Favorite/>
-    <App/>
+    <Composition/>
+    {/* <App/> */}
+    <Ancestor />
     <NameForm />
     {/* <Login />
     <Event/> */}

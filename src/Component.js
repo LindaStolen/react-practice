@@ -8,7 +8,7 @@ function Avatar(props){
 }
 function UserInfo(props){
     return(
-        <div className="UserInfo">
+        <div className="UserInfo" style={style}>
             <Avatar user={props.user.avatarUrl}/>
             <div className="UserInfo-name">
             {props.user.name}
@@ -40,6 +40,10 @@ function Comment() {
       </div>
     );
   }
+const style= {
+  width: "300px",
 
+
+}
 
 export default Comment;
