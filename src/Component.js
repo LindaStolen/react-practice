@@ -20,14 +20,6 @@ function formatDate(date) {
     return date.toLocaleDateString();
   }
 function Comment() {    
-    const comment = {
-        author: {
-            avatarUrl: "http://www.biaoqingb.com/uploads/img1/20210625/b92e4a193ce050ae733879e63aec67b8.jpg",
-            name: "大頭",
-        },
-        text: '我頭很大所以常常跌倒造成地震',
-        date: new Date(),
-    }
     return (
       <div className="Comment">
         <UserInfo user={comment.author}/>
@@ -42,8 +34,14 @@ function Comment() {
   }
 const style= {
   width: "300px",
-
-
+}
+const comment = {
+    author: {
+        avatarUrl: "http://www.biaoqingb.com/uploads/img1/20210625/b92e4a193ce050ae733879e63aec67b8.jpg",
+        name: "大頭",
+    },
+    text: '我頭很大所以常常跌倒造成地震',
+    date: new Date(),
 }
 
 export default Comment;

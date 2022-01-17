@@ -8,21 +8,6 @@
 
 
 function favorite(){
-    const friut = [
-        {   person: "UU",
-            favorite: "cherry",
-            hate: "apple",
-        },
-        {   person: "Linda",
-            favorite: "apple",
-            hate: "papaya",
-        },
-        {   person: "Marty",
-            favorite: "guava",
-            hate: "lemon",
-        },
-    ]
-    
     return (
         friut.map(    
             (friut, i) => 
@@ -32,6 +17,20 @@ function favorite(){
         )
     )
 }
+const friut = [
+    {   person: "UU",
+        favorite: "cherry",
+        hate: "apple",
+    },
+    {   person: "Linda",
+        favorite: "apple",
+        hate: "papaya",
+    },
+    {   person: "Marty",
+        favorite: "guava",
+        hate: "lemon",
+    },
+]
 // function favorite(){
 //     return(
 //         <div className="font-extrabold">

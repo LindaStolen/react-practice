@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import Favorite from './Favorite';
-import Dismantle from './Component';
+import Product from './Product';
+// import Dismantle from './Component';
 import NameForm from './NameForm';
 import Ancestor from './Ancestor';
 import Composition from './Composition';
@@ -28,13 +29,14 @@ import Composition from './Composition';
 let sum = (
   <div className="container">
     <Favorite/>
+    <Product/>
     <Composition/>
-    {/* <App/> */}
     <Ancestor />
     <NameForm />
+    {/* <App/> */}
     {/* <Login />
     <Event/> */}
-    <Dismantle/>
+    {/* <Dismantle/> */}
     {/* <Clock />
     <Toggle />
     <InlineJsx /> */}
